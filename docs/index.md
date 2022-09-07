@@ -5,8 +5,8 @@ Anggota dan NIM Kelompok
 2. Luthfi Izzuddin Hanif - 20/463605/TK/51597 
 3. Kurnia Dwi Utami - 20/456369/TK/50499
 
-“Project Senior Project TI” 
-Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada)
+“Project Junior Project TI” 
+(Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada)
 
 
 Nama aplikasi : Moneygement 
