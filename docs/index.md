@@ -1,8 +1,6 @@
 <details open> 
-<summary> 
-  
- ### The Team  
-</summary>
+<summary> The Team </summary>
+<br>
 
 Nama Kelompok : Moneygement 
 
@@ -15,10 +13,8 @@ Anggota dan NIM Kelompok
 ---
 
 <details open> 
-<summary> 
-  
-### About Project
-</summary>
+<summary> About Project </summary>
+<br>
 
 “Project Junior Project TI” \
 (Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada)
@@ -41,10 +37,8 @@ YNAB (You Need A Budget)
 ---
 
 <details open> 
-<summary> 
-  
- ### UML Document  
-</summary>
+<summary> UML Document </summary>
+<br>
   
 <details> 
 <summary> Use Case Diagram </summary>
