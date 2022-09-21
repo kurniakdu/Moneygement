@@ -2,12 +2,12 @@
 <summary> The Team </summary>
 <br>
 
-Nama Kelompok : Moneygement 
+  <p> Nama Kelompok : Moneygement </p>
 
-Anggota dan NIM Kelompok 
-1. Adrian Syah Abidin - 20/463588/TK/51580
-2. Luthfi Izzuddin Hanif - 20/463605/TK/51597 
-3. Kurnia Dwi Utami - 20/456369/TK/50499
+<p> Anggota dan NIM Kelompok </p>
+<p>1. Adrian Syah Abidin - 20/463588/TK/51580 </p>
+<p>2. Luthfi Izzuddin Hanif - 20/463605/TK/51597 </p>
+<p>3. Kurnia Dwi Utami - 20/456369/TK/50499 </p>
 
 </details>
   <br>
@@ -18,13 +18,13 @@ Anggota dan NIM Kelompok
 <summary> About Project </summary>
 <br>
 
-“Project Junior Project TI” \
-(Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada)
+<p>“Project Junior Project TI” </p>
+<p>(Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada) </p>
 
 
-Nama aplikasi : Moneygement 
-Kategori      : Gaya Hidup
-Tipe aplikasi : Desktop
+<p>Nama aplikasi : Moneygement </p>
+<p>Kategori      : Gaya Hidup </p>
+<p>Tipe aplikasi : Desktop </p>
 
 Permasalahan yang dipecahkan \
 Saat ini, masih ada begitu banyak orang yang kesulitan mengatur keuangannya. Pencatatan secara manual seringkali mengalami ketidakteraturan ataupun kesalahan saat pencatatan. Dengan demikian, kelompok kami membuat aplikasi ini agar dapat mencatat keuangan secara digital dan mampu mengatasi kekurangan dari pencatatan manual.
