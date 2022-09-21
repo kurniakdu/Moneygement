@@ -8,6 +8,7 @@ Anggota dan NIM Kelompok
 1. Adrian Syah Abidin - 20/463588/TK/51580
 2. Luthfi Izzuddin Hanif - 20/463605/TK/51597 
 3. Kurnia Dwi Utami - 20/456369/TK/50499
+  <br>
 </details>
 
 ---
@@ -32,6 +33,7 @@ Fitur yang kami kembangkan pada aplikasi ini ada 3, yaitu transactions, report, 
 
 Aplikasi sejenis yang mirip dengan solusi yang diusulkan: \
 YNAB (You Need A Budget)
+  <br>
 </details>
 
 ---
