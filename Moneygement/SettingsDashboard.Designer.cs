@@ -1,6 +1,6 @@
 ﻿namespace Moneygement
 {
-    partial class Dashboard
+    partial class SettingsDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -36,15 +36,12 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbProfile = new System.Windows.Forms.PictureBox();
-            this.lblSayHi = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSide
@@ -74,7 +71,6 @@
             this.btnSettings.Size = new System.Drawing.Size(200, 32);
             this.btnSettings.TabIndex = 13;
             this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnLogout
             // 
@@ -144,8 +140,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.panel1.Controls.Add(this.pbProfile);
-            this.panel1.Controls.Add(this.lblSayHi);
             this.panel1.Controls.Add(this.lblDashboard);
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.btnClose);
@@ -155,36 +149,15 @@
             this.panel1.Size = new System.Drawing.Size(800, 600);
             this.panel1.TabIndex = 5;
             // 
-            // pbProfile
-            // 
-            this.pbProfile.Image = global::Moneygement.Properties.Resources.user;
-            this.pbProfile.InitialImage = null;
-            this.pbProfile.Location = new System.Drawing.Point(693, 65);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.Size = new System.Drawing.Size(40, 40);
-            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbProfile.TabIndex = 8;
-            this.pbProfile.TabStop = false;
-            // 
-            // lblSayHi
-            // 
-            this.lblSayHi.AutoSize = true;
-            this.lblSayHi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSayHi.Location = new System.Drawing.Point(637, 75);
-            this.lblSayHi.Name = "lblSayHi";
-            this.lblSayHi.Size = new System.Drawing.Size(63, 23);
-            this.lblSayHi.TabIndex = 7;
-            this.lblSayHi.Text = "Hi, Jono!";
-            // 
             // lblDashboard
             // 
             this.lblDashboard.AutoSize = true;
             this.lblDashboard.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDashboard.Location = new System.Drawing.Point(48, 108);
             this.lblDashboard.Name = "lblDashboard";
-            this.lblDashboard.Size = new System.Drawing.Size(121, 34);
+            this.lblDashboard.Size = new System.Drawing.Size(92, 34);
             this.lblDashboard.TabIndex = 6;
-            this.lblDashboard.Text = "Dashboard";
+            this.lblDashboard.Text = "Settings";
             // 
             // btnMinimize
             // 
@@ -212,7 +185,7 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Dashboard
+            // SettingsDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,14 +194,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Dashboard";
+            this.Name = "SettingsDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "DashboardMoneygement1";
             this.pnlSide.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,8 +211,6 @@
         private Button btnMinimize;
         private Button btnClose;
         private PictureBox pbLogo;
-        private PictureBox pbProfile;
-        private Label lblSayHi;
         private Label lblDashboard;
         private Button btnHistory;
         private Button btnTransaction;

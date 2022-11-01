@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Moneygement
 {
-    public partial class Dashboard : Form
+    public partial class HistoryDashboard : Form
     {
-        public Dashboard()
+        public HistoryDashboard()
         {
             InitializeComponent();
         }
@@ -29,7 +29,10 @@ namespace Moneygement
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Dashboard dashboard = new Dashboard();
+            dashboard.FormClosed += (s, args) => this.Close();
+            dashboard.ShowDialog();
         }
 
         private void btnTransaction_Click(object sender, EventArgs e)
@@ -38,14 +41,6 @@ namespace Moneygement
             TransactionDashboard Trdashboard = new TransactionDashboard();
             Trdashboard.FormClosed += (s, args) => this.Close();
             Trdashboard.ShowDialog();
-        }
-
-        private void btnHistory_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HistoryDashboard Hidashboard = new HistoryDashboard();
-            Hidashboard.FormClosed += (s, args) => this.Close();
-            Hidashboard.ShowDialog();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

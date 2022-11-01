@@ -1,6 +1,6 @@
 ﻿namespace Moneygement
 {
-    partial class Dashboard
+    partial class HistoryDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.btnTransaction = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pbProfile = new System.Windows.Forms.PictureBox();
             this.lblSayHi = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +101,6 @@
             this.btnHistory.Size = new System.Drawing.Size(200, 32);
             this.btnHistory.TabIndex = 11;
             this.btnHistory.UseVisualStyleBackColor = true;
-            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnTransaction
             // 
@@ -141,19 +140,19 @@
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
-            // panel1
+            // pnlMain
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.panel1.Controls.Add(this.pbProfile);
-            this.panel1.Controls.Add(this.lblSayHi);
-            this.panel1.Controls.Add(this.lblDashboard);
-            this.panel1.Controls.Add(this.btnMinimize);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 600);
-            this.panel1.TabIndex = 5;
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.pbProfile);
+            this.pnlMain.Controls.Add(this.lblSayHi);
+            this.pnlMain.Controls.Add(this.lblDashboard);
+            this.pnlMain.Controls.Add(this.btnMinimize);
+            this.pnlMain.Controls.Add(this.btnClose);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(200, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(800, 600);
+            this.pnlMain.TabIndex = 5;
             // 
             // pbProfile
             // 
@@ -182,9 +181,9 @@
             this.lblDashboard.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDashboard.Location = new System.Drawing.Point(48, 108);
             this.lblDashboard.Name = "lblDashboard";
-            this.lblDashboard.Size = new System.Drawing.Size(121, 34);
+            this.lblDashboard.Size = new System.Drawing.Size(80, 34);
             this.lblDashboard.TabIndex = 6;
-            this.lblDashboard.Text = "Dashboard";
+            this.lblDashboard.Text = "History";
             // 
             // btnMinimize
             // 
@@ -212,22 +211,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Dashboard
+            // HistoryDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Dashboard";
+            this.Name = "HistoryDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "DashboardMoneygement1";
             this.pnlSide.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlMain.ResumeLayout(false);
+            this.pnlMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.ResumeLayout(false);
 
@@ -235,7 +234,7 @@
 
         #endregion
         private Panel pnlSide;
-        private Panel panel1;
+        private Panel pnlMain;
         private Button btnMinimize;
         private Button btnClose;
         private PictureBox pbLogo;

@@ -103,6 +103,26 @@ namespace Moneygement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Historybtn {
+            get {
+                object obj = ResourceManager.GetObject("Historybtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Historybtn1 {
+            get {
+                object obj = ResourceManager.GetObject("Historybtn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Incomebtn {
             get {
                 object obj = ResourceManager.GetObject("Incomebtn", resourceCulture);
@@ -126,6 +146,16 @@ namespace Moneygement.Properties {
         internal static System.Drawing.Bitmap Settingsbtn {
             get {
                 object obj = ResourceManager.GetObject("Settingsbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Transactionbtn {
+            get {
+                object obj = ResourceManager.GetObject("Transactionbtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
