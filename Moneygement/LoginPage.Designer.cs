@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.pnlSide = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
@@ -41,7 +40,7 @@
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.pbUsername = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblLogin = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -66,7 +65,7 @@
             // 
             // pbLogo
             // 
-            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Image = global::Moneygement.Properties.Resources.Group_12;
             this.pbLogo.Location = new System.Drawing.Point(23, 283);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(299, 72);
@@ -82,7 +81,7 @@
             this.pnlMain.Controls.Add(this.btnLogin);
             this.pnlMain.Controls.Add(this.pnlPassword);
             this.pnlMain.Controls.Add(this.pnlUsername);
-            this.pnlMain.Controls.Add(this.label1);
+            this.pnlMain.Controls.Add(this.lblLogin);
             this.pnlMain.Controls.Add(this.lblWelcome);
             this.pnlMain.Controls.Add(this.btnMinimize);
             this.pnlMain.Controls.Add(this.btnClose);
@@ -138,6 +137,7 @@
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pnlPassword
             // 
@@ -163,7 +163,7 @@
             // 
             // pbPassword
             // 
-            this.pbPassword.Image = ((System.Drawing.Image)(resources.GetObject("pbPassword.Image")));
+            this.pbPassword.Image = global::Moneygement.Properties.Resources._lock;
             this.pbPassword.Location = new System.Drawing.Point(5, 6);
             this.pbPassword.Name = "pbPassword";
             this.pbPassword.Size = new System.Drawing.Size(30, 30);
@@ -195,7 +195,7 @@
             // 
             // pbUsername
             // 
-            this.pbUsername.Image = ((System.Drawing.Image)(resources.GetObject("pbUsername.Image")));
+            this.pbUsername.Image = global::Moneygement.Properties.Resources.user;
             this.pbUsername.InitialImage = null;
             this.pbUsername.Location = new System.Drawing.Point(5, 6);
             this.pbUsername.Name = "pbUsername";
@@ -203,16 +203,16 @@
             this.pbUsername.TabIndex = 0;
             this.pbUsername.TabStop = false;
             // 
-            // label1
+            // lblLogin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(225, 230);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 34);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Log in to your account";
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Poppins Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
+            this.lblLogin.Location = new System.Drawing.Point(225, 230);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(224, 34);
+            this.lblLogin.TabIndex = 3;
+            this.lblLogin.Text = "Log in to your account";
             // 
             // lblWelcome
             // 
@@ -230,7 +230,7 @@
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Image = global::Moneygement.Properties.Resources.Vector;
             this.btnMinimize.Location = new System.Drawing.Point(572, 12);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(30, 30);
@@ -243,7 +243,7 @@
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Image = global::Moneygement.Properties.Resources.X;
             this.btnClose.Location = new System.Drawing.Point(614, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
@@ -260,6 +260,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "LoginPage";
             this.pnlSide.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlMain.ResumeLayout(false);
@@ -280,7 +281,7 @@
         private Button btnMinimize;
         private Button btnClose;
         private Label lblWelcome;
-        private Label label1;
+        private Label lblLogin;
         private Panel pnlPassword;
         private PictureBox pbPassword;
         private Panel pnlUsername;

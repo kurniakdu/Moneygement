@@ -16,3 +16,6 @@ C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.pdb
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.genruntimeconfig.cache
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\ref\Moneygement.dll
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.Dashboard.resources
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.ExpenseDashboard.resources
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.IncomeDashboard.resources

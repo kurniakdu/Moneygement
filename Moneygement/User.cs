@@ -25,6 +25,7 @@ namespace Moneygement
         public string Username
         {
             get { return _username; }
+            set { _username = value; }
         }
         public string Password
         {
@@ -57,10 +58,16 @@ namespace Moneygement
         {
             // code here
         }
-        public bool login()
+        public bool login(string Username, string Password)
         {
-            // code here
-            return true;
+            if (Username == "Jono" && Password == "haha")
+            {
+                return true;
+            } 
+            else
+            {
+                return false;
+            }
         }
         public bool logout()
         {

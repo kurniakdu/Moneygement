@@ -36,5 +36,23 @@ namespace Moneygement
         {
             tbPassword.UseSystemPasswordChar = true;
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.Username = tbUsername.Text;
+            user.Password = tbPassword.Text;
+            if (user.login(user.Username, user.Password))
+            {
+                this.Hide();
+                Dashboard dashboard = new Dashboard();
+                dashboard.FormClosed += (s, args) => this.Close();
+                dashboard.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Login Failed");
+            }
+        }
     }
 }
