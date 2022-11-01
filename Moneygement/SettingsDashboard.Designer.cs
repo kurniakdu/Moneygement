@@ -35,13 +35,14 @@
             this.btnTransaction = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.lblUnderConstruct = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSide
@@ -84,6 +85,7 @@
             this.btnLogout.Size = new System.Drawing.Size(200, 32);
             this.btnLogout.TabIndex = 12;
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnHistory
             // 
@@ -137,17 +139,28 @@
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
-            // panel1
+            // pnlMain
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.panel1.Controls.Add(this.lblDashboard);
-            this.panel1.Controls.Add(this.btnMinimize);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 600);
-            this.panel1.TabIndex = 5;
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.lblUnderConstruct);
+            this.pnlMain.Controls.Add(this.lblDashboard);
+            this.pnlMain.Controls.Add(this.btnMinimize);
+            this.pnlMain.Controls.Add(this.btnClose);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(200, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(800, 600);
+            this.pnlMain.TabIndex = 5;
+            // 
+            // lblUnderConstruct
+            // 
+            this.lblUnderConstruct.AutoSize = true;
+            this.lblUnderConstruct.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lblUnderConstruct.Location = new System.Drawing.Point(48, 171);
+            this.lblUnderConstruct.Name = "lblUnderConstruct";
+            this.lblUnderConstruct.Size = new System.Drawing.Size(343, 34);
+            this.lblUnderConstruct.TabIndex = 7;
+            this.lblUnderConstruct.Text = "Sorry, this page is in development";
             // 
             // lblDashboard
             // 
@@ -191,7 +204,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SettingsDashboard";
@@ -199,15 +212,15 @@
             this.Text = "DashboardMoneygement1";
             this.pnlSide.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlMain.ResumeLayout(false);
+            this.pnlMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Panel pnlSide;
-        private Panel panel1;
+        private Panel pnlMain;
         private Button btnMinimize;
         private Button btnClose;
         private PictureBox pbLogo;
@@ -217,5 +230,6 @@
         private Button btnDashboard;
         private Button btnSettings;
         private Button btnLogout;
+        private Label lblUnderConstruct;
     }
 }

@@ -35,7 +35,11 @@
             this.btnTransaction = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.pbMonthly = new System.Windows.Forms.PictureBox();
+            this.pbSavings = new System.Windows.Forms.PictureBox();
+            this.pbExpense = new System.Windows.Forms.PictureBox();
+            this.pbIncome = new System.Windows.Forms.PictureBox();
             this.pbProfile = new System.Windows.Forms.PictureBox();
             this.lblSayHi = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
@@ -43,7 +47,11 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMonthly)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSavings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExpense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +96,7 @@
             this.btnLogout.Size = new System.Drawing.Size(200, 32);
             this.btnLogout.TabIndex = 12;
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnHistory
             // 
@@ -141,19 +150,63 @@
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
-            // panel1
+            // pnlMain
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.panel1.Controls.Add(this.pbProfile);
-            this.panel1.Controls.Add(this.lblSayHi);
-            this.panel1.Controls.Add(this.lblDashboard);
-            this.panel1.Controls.Add(this.btnMinimize);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 600);
-            this.panel1.TabIndex = 5;
+            this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.pbMonthly);
+            this.pnlMain.Controls.Add(this.pbSavings);
+            this.pnlMain.Controls.Add(this.pbExpense);
+            this.pnlMain.Controls.Add(this.pbIncome);
+            this.pnlMain.Controls.Add(this.pbProfile);
+            this.pnlMain.Controls.Add(this.lblSayHi);
+            this.pnlMain.Controls.Add(this.lblDashboard);
+            this.pnlMain.Controls.Add(this.btnMinimize);
+            this.pnlMain.Controls.Add(this.btnClose);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(200, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(800, 600);
+            this.pnlMain.TabIndex = 5;
+            // 
+            // pbMonthly
+            // 
+            this.pbMonthly.Image = global::Moneygement.Properties.Resources.Monthlysum;
+            this.pbMonthly.Location = new System.Drawing.Point(48, 262);
+            this.pbMonthly.Name = "pbMonthly";
+            this.pbMonthly.Size = new System.Drawing.Size(634, 326);
+            this.pbMonthly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMonthly.TabIndex = 12;
+            this.pbMonthly.TabStop = false;
+            // 
+            // pbSavings
+            // 
+            this.pbSavings.Image = global::Moneygement.Properties.Resources.Totalsavings;
+            this.pbSavings.Location = new System.Drawing.Point(512, 162);
+            this.pbSavings.Name = "pbSavings";
+            this.pbSavings.Size = new System.Drawing.Size(170, 75);
+            this.pbSavings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSavings.TabIndex = 11;
+            this.pbSavings.TabStop = false;
+            // 
+            // pbExpense
+            // 
+            this.pbExpense.Image = global::Moneygement.Properties.Resources.Totalexpense1;
+            this.pbExpense.Location = new System.Drawing.Point(281, 162);
+            this.pbExpense.Name = "pbExpense";
+            this.pbExpense.Size = new System.Drawing.Size(170, 75);
+            this.pbExpense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbExpense.TabIndex = 10;
+            this.pbExpense.TabStop = false;
+            // 
+            // pbIncome
+            // 
+            this.pbIncome.Image = global::Moneygement.Properties.Resources.Totalincome;
+            this.pbIncome.Location = new System.Drawing.Point(48, 162);
+            this.pbIncome.Name = "pbIncome";
+            this.pbIncome.Size = new System.Drawing.Size(170, 75);
+            this.pbIncome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIncome.TabIndex = 9;
+            this.pbIncome.TabStop = false;
             // 
             // pbProfile
             // 
@@ -218,7 +271,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
@@ -226,8 +279,12 @@
             this.Text = "Dashboard";
             this.pnlSide.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlMain.ResumeLayout(false);
+            this.pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMonthly)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSavings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExpense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.ResumeLayout(false);
 
@@ -235,7 +292,7 @@
 
         #endregion
         private Panel pnlSide;
-        private Panel panel1;
+        private Panel pnlMain;
         private Button btnMinimize;
         private Button btnClose;
         private PictureBox pbLogo;
@@ -247,5 +304,9 @@
         private Button btnDashboard;
         private Button btnSettings;
         private Button btnLogout;
+        private PictureBox pbSavings;
+        private PictureBox pbExpense;
+        private PictureBox pbIncome;
+        private PictureBox pbMonthly;
     }
 }

@@ -50,5 +50,21 @@ namespace Moneygement
             Hidashboard.FormClosed += (s, args) => this.Close();
             Hidashboard.ShowDialog();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Hide();
+                LoginPage login = new LoginPage();
+                login.FormClosed += (s, args) => this.Close();
+                login.ShowDialog();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+        }
     }
 }

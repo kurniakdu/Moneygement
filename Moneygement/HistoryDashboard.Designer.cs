@@ -36,6 +36,7 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.pbTrHistory = new System.Windows.Forms.PictureBox();
             this.pbProfile = new System.Windows.Forms.PictureBox();
             this.lblSayHi = new System.Windows.Forms.Label();
             this.lblDashboard = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +90,7 @@
             this.btnLogout.Size = new System.Drawing.Size(200, 32);
             this.btnLogout.TabIndex = 12;
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnHistory
             // 
@@ -143,6 +146,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.pbTrHistory);
             this.pnlMain.Controls.Add(this.pbProfile);
             this.pnlMain.Controls.Add(this.lblSayHi);
             this.pnlMain.Controls.Add(this.lblDashboard);
@@ -153,6 +157,17 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(800, 600);
             this.pnlMain.TabIndex = 5;
+            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
+            // 
+            // pbTrHistory
+            // 
+            this.pbTrHistory.Image = global::Moneygement.Properties.Resources.Transactionhistory;
+            this.pbTrHistory.Location = new System.Drawing.Point(48, 171);
+            this.pbTrHistory.Name = "pbTrHistory";
+            this.pbTrHistory.Size = new System.Drawing.Size(646, 402);
+            this.pbTrHistory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbTrHistory.TabIndex = 9;
+            this.pbTrHistory.TabStop = false;
             // 
             // pbProfile
             // 
@@ -227,6 +242,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.ResumeLayout(false);
 
@@ -246,5 +262,6 @@
         private Button btnDashboard;
         private Button btnSettings;
         private Button btnLogout;
+        private PictureBox pbTrHistory;
     }
 }
