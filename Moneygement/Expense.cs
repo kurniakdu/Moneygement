@@ -9,10 +9,10 @@ namespace Moneygement
     public class Expense
     {
         // instance variables
-        private int _transactionId;
-        private string _transactionName;
-        private double _expenseAmount;
-        private string _expenseType;
+        protected int _transactionId;
+        protected string _transactionName;
+        protected double _amount;
+        protected string _type;
 
         // properties
         public int TransactionId
@@ -24,23 +24,23 @@ namespace Moneygement
             get { return _transactionName; }
             set { _transactionName = value; }
         }
-        public double ExpenseAmount
+        public double Amount
         {
-            get { return _expenseAmount; }
-            set { _expenseAmount = value; }
+            get { return _amount; }
+            set { _amount = value; }
         }
-        public string ExpenseType
+        public string Type
         {
-            get { return _expenseType; }
-            set { _expenseType = value; }
+            get { return _type; }
+            set { _type = value; }
         }
 
         // methods
-        public void add_expense()
+        public virtual void add_item()
         {
             // code here
         }
-        public void delete_expense()
+        public virtual void delete_item()
         {
             // code here
         }

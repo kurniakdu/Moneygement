@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1ZHOAtynQqTsopFsHt5fIICMpK6OIHGyNP1ZVhYIef0BiocuGq2JuU7enP9cVjm9eq1u234aast0i52LbNwayQ==",
+  "dgSpecHash": "cteypXes1uc6R97lm8OuNyMMYIsv5yxDs4ERMDnjIMPqdetP5r7/r30RTwi3ilOzYHuz1gz/SxfYLhE1yffs0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Luthfi Izzuddin\\Documents\\Project\\Moneygement\\Moneygement\\Moneygement.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Luthfi Izzuddin\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
+    "C:\\Users\\Luthfi Izzuddin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

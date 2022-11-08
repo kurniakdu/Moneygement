@@ -1,20 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Moneygement
 {
-    public class Income
+    internal class Income: Expense
     {
-        // instance variables
-        private int _transactionId;
-        private string _transactionName;
-        private double _incomeAmount;
-        private string _incomeType;
-
-        // properties
         public int TransactionId
         {
             get { return _transactionId; }
@@ -24,23 +18,23 @@ namespace Moneygement
             get { return _transactionName; }
             set { _transactionName = value; }
         }
-        public double IncomeAmount
+        public double Amount
         {
-            get { return _incomeAmount; }
-            set { _incomeAmount = value; }
+            get { return _amount; }
+            set { _amount = value; }
         }
-        public string IncomeType
+        public string Type
         {
-            get { return _incomeType; }
-            set { _incomeType = value; }
+            get { return _type; }
+            set { _type = value; }
         }
 
         // methods
-        public void add_income()
+        public override void add_item()
         {
             // code here
         }
-        public void delete_income()
+        public override void delete_item()
         {
             // code here
         }
