@@ -1,6 +1,6 @@
 ﻿namespace Moneygement
 {
-    partial class LoginPage
+    partial class SignupPage
     {
         /// <summary>
         /// Required designer variable.
@@ -31,17 +31,23 @@
             this.pnlSide = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.btnSignUp = new System.Windows.Forms.Button();
-            this.btnForgotPw = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.pbPassword = new System.Windows.Forms.PictureBox();
+            this.pnlPhone = new System.Windows.Forms.Panel();
+            this.tbPhone = new System.Windows.Forms.TextBox();
+            this.pbPhone = new System.Windows.Forms.PictureBox();
+            this.pnlName = new System.Windows.Forms.Panel();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.pbName = new System.Windows.Forms.PictureBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.pnlEmail = new System.Windows.Forms.Panel();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.pbEmail = new System.Windows.Forms.PictureBox();
             this.pnlUsername = new System.Windows.Forms.Panel();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.pbUsername = new System.Windows.Forms.PictureBox();
             this.lblLogin = new System.Windows.Forms.Label();
-            this.lblWelcome = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlSide.SuspendLayout();
@@ -49,6 +55,12 @@
             this.pnlMain.SuspendLayout();
             this.pnlPassword.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPassword)).BeginInit();
+            this.pnlPhone.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhone)).BeginInit();
+            this.pnlName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbName)).BeginInit();
+            this.pnlEmail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmail)).BeginInit();
             this.pnlUsername.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).BeginInit();
             this.SuspendLayout();
@@ -76,13 +88,13 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.pnlMain.Controls.Add(this.btnSignUp);
-            this.pnlMain.Controls.Add(this.btnForgotPw);
-            this.pnlMain.Controls.Add(this.btnLogin);
             this.pnlMain.Controls.Add(this.pnlPassword);
+            this.pnlMain.Controls.Add(this.pnlPhone);
+            this.pnlMain.Controls.Add(this.pnlName);
+            this.pnlMain.Controls.Add(this.btnLogin);
+            this.pnlMain.Controls.Add(this.pnlEmail);
             this.pnlMain.Controls.Add(this.pnlUsername);
             this.pnlMain.Controls.Add(this.lblLogin);
-            this.pnlMain.Controls.Add(this.lblWelcome);
             this.pnlMain.Controls.Add(this.btnMinimize);
             this.pnlMain.Controls.Add(this.btnClose);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -91,64 +103,15 @@
             this.pnlMain.Size = new System.Drawing.Size(656, 600);
             this.pnlMain.TabIndex = 1;
             // 
-            // btnSignUp
-            // 
-            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSignUp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(190)))), ((int)(((byte)(203)))));
-            this.btnSignUp.FlatAppearance.BorderSize = 0;
-            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignUp.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.btnSignUp.Location = new System.Drawing.Point(199, 462);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(277, 24);
-            this.btnSignUp.TabIndex = 8;
-            this.btnSignUp.Text = "Didn\'t have account already?";
-            this.btnSignUp.UseVisualStyleBackColor = false;
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            // 
-            // btnForgotPw
-            // 
-            this.btnForgotPw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.btnForgotPw.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnForgotPw.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(190)))), ((int)(((byte)(203)))));
-            this.btnForgotPw.FlatAppearance.BorderSize = 0;
-            this.btnForgotPw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForgotPw.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnForgotPw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.btnForgotPw.Location = new System.Drawing.Point(199, 439);
-            this.btnForgotPw.Name = "btnForgotPw";
-            this.btnForgotPw.Size = new System.Drawing.Size(277, 26);
-            this.btnForgotPw.TabIndex = 7;
-            this.btnForgotPw.Text = "Forgot Password?";
-            this.btnForgotPw.UseVisualStyleBackColor = false;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(190)))), ((int)(((byte)(203)))));
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(190)))), ((int)(((byte)(203)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(199, 386);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(277, 35);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
             // pnlPassword
             // 
             this.pnlPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPassword.Controls.Add(this.tbPassword);
             this.pnlPassword.Controls.Add(this.pbPassword);
-            this.pnlPassword.Location = new System.Drawing.Point(199, 327);
+            this.pnlPassword.Location = new System.Drawing.Point(199, 374);
             this.pnlPassword.Name = "pnlPassword";
             this.pnlPassword.Size = new System.Drawing.Size(277, 42);
-            this.pnlPassword.TabIndex = 5;
+            this.pnlPassword.TabIndex = 7;
             // 
             // tbPassword
             // 
@@ -170,15 +133,126 @@
             this.pbPassword.Size = new System.Drawing.Size(30, 30);
             this.pbPassword.TabIndex = 1;
             this.pbPassword.TabStop = false;
-            this.pbPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseDown);
-            this.pbPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseUp);
+            // 
+            // pnlPhone
+            // 
+            this.pnlPhone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPhone.Controls.Add(this.tbPhone);
+            this.pnlPhone.Controls.Add(this.pbPhone);
+            this.pnlPhone.Location = new System.Drawing.Point(199, 326);
+            this.pnlPhone.Name = "pnlPhone";
+            this.pnlPhone.Size = new System.Drawing.Size(277, 42);
+            this.pnlPhone.TabIndex = 6;
+            // 
+            // tbPhone
+            // 
+            this.tbPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.tbPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPhone.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbPhone.Location = new System.Drawing.Point(41, 11);
+            this.tbPhone.Name = "tbPhone";
+            this.tbPhone.PlaceholderText = "Phone";
+            this.tbPhone.Size = new System.Drawing.Size(222, 18);
+            this.tbPhone.TabIndex = 2;
+            this.tbPhone.UseSystemPasswordChar = true;
+            // 
+            // pbPhone
+            // 
+            this.pbPhone.Image = global::Moneygement.Properties.Resources.Phoneicon2;
+            this.pbPhone.Location = new System.Drawing.Point(5, 6);
+            this.pbPhone.Name = "pbPhone";
+            this.pbPhone.Size = new System.Drawing.Size(30, 30);
+            this.pbPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbPhone.TabIndex = 1;
+            this.pbPhone.TabStop = false;
+            // 
+            // pnlName
+            // 
+            this.pnlName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlName.Controls.Add(this.tbName);
+            this.pnlName.Controls.Add(this.pbName);
+            this.pnlName.Location = new System.Drawing.Point(199, 230);
+            this.pnlName.Name = "pnlName";
+            this.pnlName.Size = new System.Drawing.Size(277, 42);
+            this.pnlName.TabIndex = 5;
+            // 
+            // tbName
+            // 
+            this.tbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.tbName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbName.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbName.Location = new System.Drawing.Point(41, 11);
+            this.tbName.Name = "tbName";
+            this.tbName.PlaceholderText = "Name";
+            this.tbName.Size = new System.Drawing.Size(222, 18);
+            this.tbName.TabIndex = 1;
+            // 
+            // pbName
+            // 
+            this.pbName.Image = global::Moneygement.Properties.Resources.user;
+            this.pbName.InitialImage = null;
+            this.pbName.Location = new System.Drawing.Point(5, 6);
+            this.pbName.Name = "pbName";
+            this.pbName.Size = new System.Drawing.Size(30, 30);
+            this.pbName.TabIndex = 0;
+            this.pbName.TabStop = false;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(190)))), ((int)(((byte)(203)))));
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(190)))), ((int)(((byte)(203)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(199, 441);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(277, 35);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "Create Account";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // pnlEmail
+            // 
+            this.pnlEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlEmail.Controls.Add(this.tbEmail);
+            this.pnlEmail.Controls.Add(this.pbEmail);
+            this.pnlEmail.Location = new System.Drawing.Point(199, 278);
+            this.pnlEmail.Name = "pnlEmail";
+            this.pnlEmail.Size = new System.Drawing.Size(277, 42);
+            this.pnlEmail.TabIndex = 5;
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEmail.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbEmail.Location = new System.Drawing.Point(41, 11);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PlaceholderText = "Email";
+            this.tbEmail.Size = new System.Drawing.Size(222, 18);
+            this.tbEmail.TabIndex = 2;
+            this.tbEmail.UseSystemPasswordChar = true;
+            // 
+            // pbEmail
+            // 
+            this.pbEmail.Image = global::Moneygement.Properties.Resources.Emailicon3;
+            this.pbEmail.InitialImage = null;
+            this.pbEmail.Location = new System.Drawing.Point(5, 7);
+            this.pbEmail.Name = "pbEmail";
+            this.pbEmail.Size = new System.Drawing.Size(30, 30);
+            this.pbEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbEmail.TabIndex = 1;
+            this.pbEmail.TabStop = false;
+            this.pbEmail.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseDown);
+            this.pbEmail.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseUp);
             // 
             // pnlUsername
             // 
             this.pnlUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlUsername.Controls.Add(this.tbUsername);
             this.pnlUsername.Controls.Add(this.pbUsername);
-            this.pnlUsername.Location = new System.Drawing.Point(199, 279);
+            this.pnlUsername.Location = new System.Drawing.Point(199, 182);
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.Size = new System.Drawing.Size(277, 42);
             this.pnlUsername.TabIndex = 4;
@@ -209,22 +283,11 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Poppins Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.lblLogin.Location = new System.Drawing.Point(225, 230);
+            this.lblLogin.Location = new System.Drawing.Point(224, 128);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(224, 34);
+            this.lblLogin.Size = new System.Drawing.Size(214, 34);
             this.lblLogin.TabIndex = 3;
-            this.lblLogin.Text = "Log in to your account";
-            // 
-            // lblWelcome
-            // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Poppins SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.lblWelcome.Location = new System.Drawing.Point(168, 168);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(349, 42);
-            this.lblWelcome.TabIndex = 2;
-            this.lblWelcome.Text = "Welcome to Moneygement";
+            this.lblLogin.Text = "Sign up new account";
             // 
             // btnMinimize
             // 
@@ -252,16 +315,16 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // LoginPage
+            // SignupPage
             // 
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.ControlBox = false;
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LoginPage";
+            this.Name = "SignupPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginPage";
+            this.Text = "SignupPage";
             this.pnlSide.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlMain.ResumeLayout(false);
@@ -269,6 +332,15 @@
             this.pnlPassword.ResumeLayout(false);
             this.pnlPassword.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPassword)).EndInit();
+            this.pnlPhone.ResumeLayout(false);
+            this.pnlPhone.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhone)).EndInit();
+            this.pnlName.ResumeLayout(false);
+            this.pnlName.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbName)).EndInit();
+            this.pnlEmail.ResumeLayout(false);
+            this.pnlEmail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEmail)).EndInit();
             this.pnlUsername.ResumeLayout(false);
             this.pnlUsername.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).EndInit();
@@ -281,17 +353,23 @@
         private Panel pnlMain;
         private Button btnMinimize;
         private Button btnClose;
-        private Label lblWelcome;
         private Label lblLogin;
-        private Panel pnlPassword;
-        private PictureBox pbPassword;
+        private Panel pnlEmail;
+        private PictureBox pbEmail;
         private Panel pnlUsername;
         private PictureBox pbUsername;
-        private TextBox tbPassword;
+        private TextBox tbEmail;
         private TextBox tbUsername;
         private Button btnLogin;
-        private Button btnForgotPw;
-        private Button btnSignUp;
+        private Panel pnlPassword;
+        private TextBox tbPassword;
+        private PictureBox pbPassword;
+        private Panel pnlPhone;
+        private TextBox tbPhone;
+        private PictureBox pbPhone;
+        private Panel pnlName;
+        private TextBox tbName;
+        private PictureBox pbName;
     }
     #endregion
 }

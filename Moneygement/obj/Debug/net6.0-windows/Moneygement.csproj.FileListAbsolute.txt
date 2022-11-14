@@ -20,3 +20,6 @@ C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.HistoryDashboard.resources
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.TransactionDashboard.resources
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.SettingsDashboard.resources
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.csproj.CopyComplete
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.SignupPage.resources

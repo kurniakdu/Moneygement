@@ -103,6 +103,46 @@ namespace Moneygement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Emailicon {
+            get {
+                object obj = ResourceManager.GetObject("Emailicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Emailicon1 {
+            get {
+                object obj = ResourceManager.GetObject("Emailicon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Emailicon2 {
+            get {
+                object obj = ResourceManager.GetObject("Emailicon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Emailicon3 {
+            get {
+                object obj = ResourceManager.GetObject("Emailicon3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Expensebtn {
             get {
                 object obj = ResourceManager.GetObject("Expensebtn", resourceCulture);
@@ -166,6 +206,36 @@ namespace Moneygement.Properties {
         internal static System.Drawing.Bitmap Monthlysum {
             get {
                 object obj = ResourceManager.GetObject("Monthlysum", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Phoneicon {
+            get {
+                object obj = ResourceManager.GetObject("Phoneicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Phoneicon1 {
+            get {
+                object obj = ResourceManager.GetObject("Phoneicon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Phoneicon2 {
+            get {
+                object obj = ResourceManager.GetObject("Phoneicon2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
