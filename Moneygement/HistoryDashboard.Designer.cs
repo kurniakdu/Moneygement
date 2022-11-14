@@ -42,11 +42,13 @@
             this.lblDashboard = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSide
@@ -146,6 +148,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.dataGridView1);
             this.pnlMain.Controls.Add(this.pbTrHistory);
             this.pnlMain.Controls.Add(this.pbProfile);
             this.pnlMain.Controls.Add(this.lblSayHi);
@@ -161,7 +164,7 @@
             // 
             // pbTrHistory
             // 
-            this.pbTrHistory.Image = global::Moneygement.Properties.Resources.Transactionhistory;
+            this.pbTrHistory.Image = global::Moneygement.Properties.Resources.Transactionhistory1;
             this.pbTrHistory.Location = new System.Drawing.Point(48, 171);
             this.pbTrHistory.Name = "pbTrHistory";
             this.pbTrHistory.Size = new System.Drawing.Size(646, 402);
@@ -173,7 +176,7 @@
             // 
             this.pbProfile.Image = global::Moneygement.Properties.Resources.user;
             this.pbProfile.InitialImage = null;
-            this.pbProfile.Location = new System.Drawing.Point(693, 65);
+            this.pbProfile.Location = new System.Drawing.Point(602, 65);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.Size = new System.Drawing.Size(40, 40);
             this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -226,6 +229,15 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(71, 247);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(600, 307);
+            this.dataGridView1.TabIndex = 10;
+            // 
             // HistoryDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -244,6 +256,7 @@
             this.pnlMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -263,5 +276,6 @@
         private Button btnSettings;
         private Button btnLogout;
         private PictureBox pbTrHistory;
+        private DataGridView dataGridView1;
     }
 }

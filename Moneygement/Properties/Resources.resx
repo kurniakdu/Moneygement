@@ -121,29 +121,41 @@
   <data name="Vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Emailicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Emailicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Totalincome1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Totalincome1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Monthlysum1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monthlysum1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phoneicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phoneicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logoutbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logoutbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Totalexpense1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Totalexpense1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Tableincome1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tableincome1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tablexpense" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tablexpense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Totalexpense1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Totalexpense1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tableincome11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tableincome11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monthlysum2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monthlysum2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Expensebtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Expensebtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Phoneicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Phoneicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Addincome1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Addincome1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Monthlysum" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Monthlysum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,6 +165,9 @@
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Btnaddexpense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Btnaddexpense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Emailicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Emailicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,17 +193,32 @@
   <data name="Dashboardbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dashboardbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tablexpense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tablexpense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Emailicon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Emailicon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Phoneicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Phoneicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Emailicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Emailicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Transactionhistory1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Transactionhistory1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Addexpense1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Addexpense1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Btnaddincome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Btnaddincome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tablexpense1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tablexpense1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Totalexpense11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Totalexpense11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Emailicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Emailicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settingsbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settingsbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,6 +232,12 @@
   <data name="Totalexpense" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Totalexpense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Totalsavings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Totalsavings1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tableexpense1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tableexpense1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tableincome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tableincome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,7 +247,10 @@
   <data name="Incomebtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Incomebtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Phoneicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Phoneicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Emailicon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Emailicon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monthlysum3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monthlysum3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

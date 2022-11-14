@@ -36,6 +36,9 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.lblSavings = new System.Windows.Forms.Label();
+            this.lblExpense = new System.Windows.Forms.Label();
+            this.lblIncome = new System.Windows.Forms.Label();
             this.pbMonthly = new System.Windows.Forms.PictureBox();
             this.pbSavings = new System.Windows.Forms.PictureBox();
             this.pbExpense = new System.Windows.Forms.PictureBox();
@@ -45,6 +48,7 @@
             this.lblDashboard = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.dgvSummary = new System.Windows.Forms.DataGridView();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
@@ -53,6 +57,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExpense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSide
@@ -153,6 +158,10 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.dgvSummary);
+            this.pnlMain.Controls.Add(this.lblSavings);
+            this.pnlMain.Controls.Add(this.lblExpense);
+            this.pnlMain.Controls.Add(this.lblIncome);
             this.pnlMain.Controls.Add(this.pbMonthly);
             this.pnlMain.Controls.Add(this.pbSavings);
             this.pnlMain.Controls.Add(this.pbExpense);
@@ -168,20 +177,53 @@
             this.pnlMain.Size = new System.Drawing.Size(800, 600);
             this.pnlMain.TabIndex = 5;
             // 
+            // lblSavings
+            // 
+            this.lblSavings.AutoSize = true;
+            this.lblSavings.BackColor = System.Drawing.Color.White;
+            this.lblSavings.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSavings.Location = new System.Drawing.Point(561, 191);
+            this.lblSavings.Name = "lblSavings";
+            this.lblSavings.Size = new System.Drawing.Size(90, 34);
+            this.lblSavings.TabIndex = 15;
+            this.lblSavings.Text = "Savings";
+            // 
+            // lblExpense
+            // 
+            this.lblExpense.AutoSize = true;
+            this.lblExpense.BackColor = System.Drawing.Color.White;
+            this.lblExpense.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblExpense.Location = new System.Drawing.Point(330, 191);
+            this.lblExpense.Name = "lblExpense";
+            this.lblExpense.Size = new System.Drawing.Size(93, 34);
+            this.lblExpense.TabIndex = 14;
+            this.lblExpense.Text = "Expense";
+            // 
+            // lblIncome
+            // 
+            this.lblIncome.AutoSize = true;
+            this.lblIncome.BackColor = System.Drawing.Color.White;
+            this.lblIncome.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIncome.Location = new System.Drawing.Point(97, 191);
+            this.lblIncome.Name = "lblIncome";
+            this.lblIncome.Size = new System.Drawing.Size(88, 34);
+            this.lblIncome.TabIndex = 13;
+            this.lblIncome.Text = "Income";
+            // 
             // pbMonthly
             // 
-            this.pbMonthly.Image = global::Moneygement.Properties.Resources.Monthlysum;
-            this.pbMonthly.Location = new System.Drawing.Point(48, 262);
+            this.pbMonthly.Image = global::Moneygement.Properties.Resources.Monthlysum3;
+            this.pbMonthly.Location = new System.Drawing.Point(48, 261);
             this.pbMonthly.Name = "pbMonthly";
-            this.pbMonthly.Size = new System.Drawing.Size(634, 326);
+            this.pbMonthly.Size = new System.Drawing.Size(625, 327);
             this.pbMonthly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMonthly.TabIndex = 12;
             this.pbMonthly.TabStop = false;
             // 
             // pbSavings
             // 
-            this.pbSavings.Image = global::Moneygement.Properties.Resources.Totalsavings;
-            this.pbSavings.Location = new System.Drawing.Point(512, 162);
+            this.pbSavings.Image = global::Moneygement.Properties.Resources.Totalsavings1;
+            this.pbSavings.Location = new System.Drawing.Point(503, 162);
             this.pbSavings.Name = "pbSavings";
             this.pbSavings.Size = new System.Drawing.Size(170, 75);
             this.pbSavings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,8 +232,8 @@
             // 
             // pbExpense
             // 
-            this.pbExpense.Image = global::Moneygement.Properties.Resources.Totalexpense1;
-            this.pbExpense.Location = new System.Drawing.Point(281, 162);
+            this.pbExpense.Image = global::Moneygement.Properties.Resources.Totalexpense11;
+            this.pbExpense.Location = new System.Drawing.Point(277, 162);
             this.pbExpense.Name = "pbExpense";
             this.pbExpense.Size = new System.Drawing.Size(170, 75);
             this.pbExpense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -200,7 +242,7 @@
             // 
             // pbIncome
             // 
-            this.pbIncome.Image = global::Moneygement.Properties.Resources.Totalincome;
+            this.pbIncome.Image = global::Moneygement.Properties.Resources.Totalincome1;
             this.pbIncome.Location = new System.Drawing.Point(48, 162);
             this.pbIncome.Name = "pbIncome";
             this.pbIncome.Size = new System.Drawing.Size(170, 75);
@@ -212,7 +254,7 @@
             // 
             this.pbProfile.Image = global::Moneygement.Properties.Resources.user;
             this.pbProfile.InitialImage = null;
-            this.pbProfile.Location = new System.Drawing.Point(693, 65);
+            this.pbProfile.Location = new System.Drawing.Point(602, 65);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.Size = new System.Drawing.Size(40, 40);
             this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -265,6 +307,15 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // dgvSummary
+            // 
+            this.dgvSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSummary.Location = new System.Drawing.Point(68, 327);
+            this.dgvSummary.Name = "dgvSummary";
+            this.dgvSummary.RowTemplate.Height = 25;
+            this.dgvSummary.Size = new System.Drawing.Size(584, 245);
+            this.dgvSummary.TabIndex = 16;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -286,6 +337,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbExpense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,5 +360,9 @@
         private PictureBox pbExpense;
         private PictureBox pbIncome;
         private PictureBox pbMonthly;
+        private Label lblIncome;
+        private Label lblExpense;
+        private Label lblSavings;
+        private DataGridView dgvSummary;
     }
 }
