@@ -50,6 +50,7 @@
             this.lblLogin = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
@@ -88,6 +89,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.btnBack);
             this.pnlMain.Controls.Add(this.pnlPassword);
             this.pnlMain.Controls.Add(this.pnlPhone);
             this.pnlMain.Controls.Add(this.pnlName);
@@ -315,6 +317,20 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
+            this.btnBack.Location = new System.Drawing.Point(199, 482);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(277, 24);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back to Login Page";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // SignupPage
             // 
             this.ClientSize = new System.Drawing.Size(1000, 600);
@@ -370,6 +386,7 @@
         private Panel pnlName;
         private TextBox tbName;
         private PictureBox pbName;
+        private Button btnBack;
     }
     #endregion
 }

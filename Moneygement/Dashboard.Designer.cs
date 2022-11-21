@@ -36,6 +36,7 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.dgvSummary = new System.Windows.Forms.DataGridView();
             this.lblSavings = new System.Windows.Forms.Label();
             this.lblExpense = new System.Windows.Forms.Label();
             this.lblIncome = new System.Windows.Forms.Label();
@@ -48,16 +49,15 @@
             this.lblDashboard = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.dgvSummary = new System.Windows.Forms.DataGridView();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonthly)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSavings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSide
@@ -79,7 +79,7 @@
             // 
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSettings.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSettings.Image = global::Moneygement.Properties.Resources.Settingsbtn;
             this.btnSettings.Location = new System.Drawing.Point(0, 484);
@@ -93,7 +93,7 @@
             // 
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLogout.Image = global::Moneygement.Properties.Resources.Logoutbtn;
             this.btnLogout.Location = new System.Drawing.Point(0, 522);
@@ -107,7 +107,7 @@
             // 
             this.btnHistory.FlatAppearance.BorderSize = 0;
             this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHistory.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnHistory.Image = global::Moneygement.Properties.Resources.Historybtn1;
             this.btnHistory.Location = new System.Drawing.Point(0, 247);
@@ -121,7 +121,7 @@
             // 
             this.btnTransaction.FlatAppearance.BorderSize = 0;
             this.btnTransaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTransaction.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTransaction.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTransaction.Image = global::Moneygement.Properties.Resources.Transactionbtn;
             this.btnTransaction.Location = new System.Drawing.Point(0, 209);
@@ -135,7 +135,7 @@
             // 
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDashboard.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnDashboard.Image = global::Moneygement.Properties.Resources.Dashboardbtn;
             this.btnDashboard.Location = new System.Drawing.Point(0, 171);
@@ -177,14 +177,23 @@
             this.pnlMain.Size = new System.Drawing.Size(800, 600);
             this.pnlMain.TabIndex = 5;
             // 
+            // dgvSummary
+            // 
+            this.dgvSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSummary.Location = new System.Drawing.Point(68, 327);
+            this.dgvSummary.Name = "dgvSummary";
+            this.dgvSummary.RowTemplate.Height = 25;
+            this.dgvSummary.Size = new System.Drawing.Size(584, 245);
+            this.dgvSummary.TabIndex = 16;
+            // 
             // lblSavings
             // 
             this.lblSavings.AutoSize = true;
             this.lblSavings.BackColor = System.Drawing.Color.White;
-            this.lblSavings.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSavings.Location = new System.Drawing.Point(561, 191);
+            this.lblSavings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSavings.Location = new System.Drawing.Point(554, 193);
             this.lblSavings.Name = "lblSavings";
-            this.lblSavings.Size = new System.Drawing.Size(90, 34);
+            this.lblSavings.Size = new System.Drawing.Size(76, 24);
             this.lblSavings.TabIndex = 15;
             this.lblSavings.Text = "Savings";
             // 
@@ -192,10 +201,10 @@
             // 
             this.lblExpense.AutoSize = true;
             this.lblExpense.BackColor = System.Drawing.Color.White;
-            this.lblExpense.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblExpense.Location = new System.Drawing.Point(330, 191);
+            this.lblExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblExpense.Location = new System.Drawing.Point(328, 193);
             this.lblExpense.Name = "lblExpense";
-            this.lblExpense.Size = new System.Drawing.Size(93, 34);
+            this.lblExpense.Size = new System.Drawing.Size(86, 24);
             this.lblExpense.TabIndex = 14;
             this.lblExpense.Text = "Expense";
             // 
@@ -203,10 +212,10 @@
             // 
             this.lblIncome.AutoSize = true;
             this.lblIncome.BackColor = System.Drawing.Color.White;
-            this.lblIncome.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblIncome.Location = new System.Drawing.Point(97, 191);
+            this.lblIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIncome.Location = new System.Drawing.Point(100, 193);
             this.lblIncome.Name = "lblIncome";
-            this.lblIncome.Size = new System.Drawing.Size(88, 34);
+            this.lblIncome.Size = new System.Drawing.Size(73, 24);
             this.lblIncome.TabIndex = 13;
             this.lblIncome.Text = "Income";
             // 
@@ -254,7 +263,7 @@
             // 
             this.pbProfile.Image = global::Moneygement.Properties.Resources.user;
             this.pbProfile.InitialImage = null;
-            this.pbProfile.Location = new System.Drawing.Point(602, 65);
+            this.pbProfile.Location = new System.Drawing.Point(600, 65);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.Size = new System.Drawing.Size(40, 40);
             this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -264,20 +273,20 @@
             // lblSayHi
             // 
             this.lblSayHi.AutoSize = true;
-            this.lblSayHi.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSayHi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSayHi.Location = new System.Drawing.Point(637, 75);
             this.lblSayHi.Name = "lblSayHi";
-            this.lblSayHi.Size = new System.Drawing.Size(63, 23);
+            this.lblSayHi.Size = new System.Drawing.Size(59, 16);
             this.lblSayHi.TabIndex = 7;
             this.lblSayHi.Text = "Hi, Jono!";
             // 
             // lblDashboard
             // 
             this.lblDashboard.AutoSize = true;
-            this.lblDashboard.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDashboard.Location = new System.Drawing.Point(48, 108);
             this.lblDashboard.Name = "lblDashboard";
-            this.lblDashboard.Size = new System.Drawing.Size(121, 34);
+            this.lblDashboard.Size = new System.Drawing.Size(102, 24);
             this.lblDashboard.TabIndex = 6;
             this.lblDashboard.Text = "Dashboard";
             // 
@@ -307,15 +316,6 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // dgvSummary
-            // 
-            this.dgvSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSummary.Location = new System.Drawing.Point(68, 327);
-            this.dgvSummary.Name = "dgvSummary";
-            this.dgvSummary.RowTemplate.Height = 25;
-            this.dgvSummary.Size = new System.Drawing.Size(584, 245);
-            this.dgvSummary.TabIndex = 16;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -332,12 +332,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonthly)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSavings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExpense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIncome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).EndInit();
             this.ResumeLayout(false);
 
         }

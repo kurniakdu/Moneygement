@@ -43,5 +43,12 @@ namespace Moneygement
             tbEmail.UseSystemPasswordChar = true;
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage login = new LoginPage();
+            login.FormClosed += (s, args) => this.Close();
+            login.ShowDialog();
+        }
     }
 }

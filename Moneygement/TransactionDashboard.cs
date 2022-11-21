@@ -66,5 +66,17 @@ namespace Moneygement
                 //do something else
             }
         }
+
+        private void btnAddIncome_Click(object sender, EventArgs e)
+        {
+            AddIncomeModal incmodal = new AddIncomeModal();
+            incmodal.ShowDialog();
+        }
+
+        private void btnAddExpense_Click(object sender, EventArgs e)
+        {
+            AddExpenseModal expmodal = new AddExpenseModal();
+            expmodal.ShowDialog();
+        }
     }
 }

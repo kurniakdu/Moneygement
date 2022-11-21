@@ -23,3 +23,30 @@ C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\bin\Debug\net6.0-windows\Npgsql.dll
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.csproj.CopyComplete
 C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.SignupPage.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\bin\Debug\net6.0-windows\Moneygement.exe
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\bin\Debug\net6.0-windows\Moneygement.deps.json
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\bin\Debug\net6.0-windows\Moneygement.runtimeconfig.json
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\bin\Debug\net6.0-windows\Moneygement.dll
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\bin\Debug\net6.0-windows\Moneygement.pdb
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\bin\Debug\net6.0-windows\Npgsql.dll
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.Dashboard.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.HistoryDashboard.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.LoginPage.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.Properties.Resources.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.SettingsDashboard.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.SignupPage.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.TransactionDashboard.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.csproj.GenerateResource.cache
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.AssemblyInfo.cs
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.csproj.CopyComplete
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.dll
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\refint\Moneygement.dll
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.pdb
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.genruntimeconfig.cache
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\ref\Moneygement.dll
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.AddIncomeModal.resources
+C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.AddExpenseModal.resources

@@ -32,7 +32,6 @@
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.btnSignUp = new System.Windows.Forms.Button();
-            this.btnForgotPw = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.tbPassword = new System.Windows.Forms.TextBox();
@@ -77,7 +76,6 @@
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
             this.pnlMain.Controls.Add(this.btnSignUp);
-            this.pnlMain.Controls.Add(this.btnForgotPw);
             this.pnlMain.Controls.Add(this.btnLogin);
             this.pnlMain.Controls.Add(this.pnlPassword);
             this.pnlMain.Controls.Add(this.pnlUsername);
@@ -100,29 +98,13 @@
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.btnSignUp.Location = new System.Drawing.Point(199, 462);
+            this.btnSignUp.Location = new System.Drawing.Point(199, 427);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(277, 24);
             this.btnSignUp.TabIndex = 8;
             this.btnSignUp.Text = "Didn\'t have account already?";
             this.btnSignUp.UseVisualStyleBackColor = false;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            // 
-            // btnForgotPw
-            // 
-            this.btnForgotPw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.btnForgotPw.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnForgotPw.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(190)))), ((int)(((byte)(203)))));
-            this.btnForgotPw.FlatAppearance.BorderSize = 0;
-            this.btnForgotPw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForgotPw.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnForgotPw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.btnForgotPw.Location = new System.Drawing.Point(199, 439);
-            this.btnForgotPw.Name = "btnForgotPw";
-            this.btnForgotPw.Size = new System.Drawing.Size(277, 26);
-            this.btnForgotPw.TabIndex = 7;
-            this.btnForgotPw.Text = "Forgot Password?";
-            this.btnForgotPw.UseVisualStyleBackColor = false;
             // 
             // btnLogin
             // 
@@ -290,7 +272,6 @@
         private TextBox tbPassword;
         private TextBox tbUsername;
         private Button btnLogin;
-        private Button btnForgotPw;
         private Button btnSignUp;
     }
     #endregion
