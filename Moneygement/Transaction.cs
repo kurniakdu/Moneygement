@@ -13,6 +13,8 @@ namespace Moneygement
         private string _name;
         private DateTime _date;
         private string _category;
+        public int incomesum;
+        public int expensesum;
 
         // properties
         public int TransactionId

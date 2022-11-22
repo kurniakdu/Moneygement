@@ -36,7 +36,7 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvHistory = new System.Windows.Forms.DataGridView();
             this.pbTrHistory = new System.Windows.Forms.PictureBox();
             this.pbProfile = new System.Windows.Forms.PictureBox();
             this.lblSayHi = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.SuspendLayout();
@@ -148,7 +148,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
-            this.pnlMain.Controls.Add(this.dataGridView1);
+            this.pnlMain.Controls.Add(this.dgvHistory);
             this.pnlMain.Controls.Add(this.pbTrHistory);
             this.pnlMain.Controls.Add(this.pbProfile);
             this.pnlMain.Controls.Add(this.lblSayHi);
@@ -160,16 +160,16 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(800, 600);
             this.pnlMain.TabIndex = 5;
-            this.pnlMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMain_Paint);
             // 
-            // dataGridView1
+            // dgvHistory
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(71, 247);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(600, 307);
-            this.dataGridView1.TabIndex = 10;
+            this.dgvHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHistory.Location = new System.Drawing.Point(71, 247);
+            this.dgvHistory.Name = "dgvHistory";
+            this.dgvHistory.RowTemplate.Height = 25;
+            this.dgvHistory.Size = new System.Drawing.Size(600, 307);
+            this.dgvHistory.TabIndex = 10;
+            this.dgvHistory.Click += new System.EventHandler(this.dgvHistory_Click);
             // 
             // pbTrHistory
             // 
@@ -254,7 +254,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.ResumeLayout(false);
@@ -276,6 +276,6 @@
         private Button btnSettings;
         private Button btnLogout;
         private PictureBox pbTrHistory;
-        private DataGridView dataGridView1;
+        private DataGridView dgvHistory;
     }
 }

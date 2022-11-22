@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,11 +52,6 @@ namespace Moneygement
             Setdashboard.ShowDialog();
         }
 
-        private void pnlMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo);
@@ -70,6 +66,22 @@ namespace Moneygement
             {
                 //do something else
             }
+        }
+
+        private void dgvHistory_Click(object sender, EventArgs e)
+        {
+            PgsqlConnect dbconnect = new PgsqlConnect();
+            TableView table = new TableView();
+            dbconnect.conn = new NpgsqlConnection(dbconnect.connstring);
+            dbconnect.conn.Open();
+            dgvHistory.DataSource = null;
+            dbconnect.sql = "select * from show_all()";
+            dbconnect.cmd = new NpgsqlCommand(dbconnect.sql, dbconnect.conn);
+            table.dt = new DataTable();
+            NpgsqlDataReader rd = dbconnect.cmd.ExecuteReader();
+            table.dt.Load(rd);
+            dgvHistory.DataSource = table.dt;
+            dbconnect.conn.Close();
         }
     }
 }

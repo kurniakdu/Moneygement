@@ -185,6 +185,7 @@
             this.dgvSummary.RowTemplate.Height = 25;
             this.dgvSummary.Size = new System.Drawing.Size(584, 245);
             this.dgvSummary.TabIndex = 16;
+            this.dgvSummary.Click += new System.EventHandler(this.dgvSummary_Click);
             // 
             // lblSavings
             // 
@@ -196,6 +197,7 @@
             this.lblSavings.Size = new System.Drawing.Size(76, 24);
             this.lblSavings.TabIndex = 15;
             this.lblSavings.Text = "Savings";
+            this.lblSavings.Click += new System.EventHandler(this.lblSavings_Click);
             // 
             // lblExpense
             // 
@@ -207,6 +209,7 @@
             this.lblExpense.Size = new System.Drawing.Size(86, 24);
             this.lblExpense.TabIndex = 14;
             this.lblExpense.Text = "Expense";
+            this.lblExpense.Click += new System.EventHandler(this.lblExpense_Click);
             // 
             // lblIncome
             // 
@@ -218,6 +221,7 @@
             this.lblIncome.Size = new System.Drawing.Size(73, 24);
             this.lblIncome.TabIndex = 13;
             this.lblIncome.Text = "Income";
+            this.lblIncome.Click += new System.EventHandler(this.lblIncome_Click);
             // 
             // pbMonthly
             // 
