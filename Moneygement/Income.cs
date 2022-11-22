@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Moneygement
 {
-    internal class Income: Expense
+    public class Income: Expense
     {
         public int TransactionId
         {

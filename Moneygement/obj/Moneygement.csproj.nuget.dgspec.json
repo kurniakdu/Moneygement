@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Downloads\\Moneygement-main\\Moneygement-main\\Moneygement\\Moneygement.csproj": {}
+    "C:\\Users\\Luthfi Izzuddin\\Documents\\Project\\Moneygement\\Moneygement\\Moneygement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Downloads\\Moneygement-main\\Moneygement-main\\Moneygement\\Moneygement.csproj": {
+    "C:\\Users\\Luthfi Izzuddin\\Documents\\Project\\Moneygement\\Moneygement\\Moneygement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Downloads\\Moneygement-main\\Moneygement-main\\Moneygement\\Moneygement.csproj",
+        "projectUniqueName": "C:\\Users\\Luthfi Izzuddin\\Documents\\Project\\Moneygement\\Moneygement\\Moneygement.csproj",
         "projectName": "Moneygement",
-        "projectPath": "C:\\Users\\user\\Downloads\\Moneygement-main\\Moneygement-main\\Moneygement\\Moneygement.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Downloads\\Moneygement-main\\Moneygement-main\\Moneygement\\obj\\",
+        "projectPath": "C:\\Users\\Luthfi Izzuddin\\Documents\\Project\\Moneygement\\Moneygement\\Moneygement.csproj",
+        "packagesPath": "C:\\Users\\Luthfi Izzuddin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luthfi Izzuddin\\Documents\\Project\\Moneygement\\Moneygement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luthfi Izzuddin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

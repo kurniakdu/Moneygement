@@ -19,10 +19,6 @@ namespace Moneygement
             InitializeComponent();
         }
 
-        private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=root;Database=db_moneygement";
-        public static NpgsqlCommand cmd;
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -49,6 +45,51 @@ namespace Moneygement
             LoginPage login = new LoginPage();
             login.FormClosed += (s, args) => this.Close();
             login.ShowDialog();
+        }
+
+        private void pbPassword_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            tbPassword.UseSystemPasswordChar = false;
+        }
+
+        private void pbPassword_MouseUp_1(object sender, MouseEventArgs e)
+        {
+            tbPassword.UseSystemPasswordChar = true;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            PgsqlConnect dbconnect = new PgsqlConnect();
+            try
+            {
+                dbconnect.conn = new NpgsqlConnection(dbconnect.connstring);
+                dbconnect.conn.Open();
+                dbconnect.sql = @"select st_insert(:_username,:_password,:_name,:_email,:_phone)";
+                dbconnect.cmd = new NpgsqlCommand(dbconnect.sql, dbconnect.conn);
+                dbconnect.cmd.Parameters.AddWithValue("_username", tbUsername.Text);
+                dbconnect.cmd.Parameters.AddWithValue("_password", tbPassword.Text);
+                dbconnect.cmd.Parameters.AddWithValue("_name", tbName.Text);
+                dbconnect.cmd.Parameters.AddWithValue("_email", tbEmail.Text);
+                dbconnect.cmd.Parameters.AddWithValue("_phone", tbPhone.Text);
+                if ((int)dbconnect.cmd.ExecuteScalar() == 1)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Account successfully created!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    tbUsername.Text = tbPassword.Text = tbName.Text = tbEmail.Text = tbPhone.Text = null;
+                    dbconnect.conn.Close();
+                    if (dialogResult == DialogResult.OK)
+                    {
+                        this.Hide();
+                        LoginPage login = new LoginPage();
+                        login.FormClosed += (s, args) => this.Close();
+                        login.ShowDialog();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "FAIL!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dbconnect.conn.Close();
+            }
         }
     }
 }

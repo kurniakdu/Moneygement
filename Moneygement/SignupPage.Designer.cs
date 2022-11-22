@@ -31,6 +31,7 @@
             this.pnlSide = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.pbPassword = new System.Windows.Forms.PictureBox();
@@ -50,7 +51,6 @@
             this.lblLogin = new System.Windows.Forms.Label();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
@@ -105,6 +105,20 @@
             this.pnlMain.Size = new System.Drawing.Size(656, 600);
             this.pnlMain.TabIndex = 1;
             // 
+            // btnBack
+            // 
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
+            this.btnBack.Location = new System.Drawing.Point(199, 482);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(277, 24);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back to Login Page";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // pnlPassword
             // 
             this.pnlPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -135,6 +149,8 @@
             this.pbPassword.Size = new System.Drawing.Size(30, 30);
             this.pbPassword.TabIndex = 1;
             this.pbPassword.TabStop = false;
+            this.pbPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseDown_1);
+            this.pbPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseUp_1);
             // 
             // pnlPhone
             // 
@@ -156,7 +172,6 @@
             this.tbPhone.PlaceholderText = "Phone";
             this.tbPhone.Size = new System.Drawing.Size(222, 18);
             this.tbPhone.TabIndex = 2;
-            this.tbPhone.UseSystemPasswordChar = true;
             // 
             // pbPhone
             // 
@@ -213,6 +228,7 @@
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Create Account";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pnlEmail
             // 
@@ -234,7 +250,6 @@
             this.tbEmail.PlaceholderText = "Email";
             this.tbEmail.Size = new System.Drawing.Size(222, 18);
             this.tbEmail.TabIndex = 2;
-            this.tbEmail.UseSystemPasswordChar = true;
             // 
             // pbEmail
             // 
@@ -316,20 +331,6 @@
             this.btnClose.TabIndex = 0;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(73)))));
-            this.btnBack.Location = new System.Drawing.Point(199, 482);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(277, 24);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "Back to Login Page";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // SignupPage
             // 

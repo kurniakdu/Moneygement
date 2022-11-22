@@ -50,3 +50,5 @@ C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\
 C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\ref\Moneygement.dll
 C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.AddIncomeModal.resources
 C:\Users\user\Downloads\Moneygement-main\Moneygement-main\Moneygement\obj\Debug\net6.0-windows\Moneygement.AddExpenseModal.resources
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.AddExpenseModal.resources
+C:\Users\Luthfi Izzuddin\Documents\Project\Moneygement\Moneygement\obj\Debug\net6.0-windows\Moneygement.AddIncomeModal.resources
