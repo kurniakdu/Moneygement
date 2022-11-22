@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -71,12 +72,38 @@ namespace Moneygement
         {
             AddIncomeModal incmodal = new AddIncomeModal();
             incmodal.ShowDialog();
+
         }
 
         private void btnAddExpense_Click(object sender, EventArgs e)
         {
             AddExpenseModal expmodal = new AddExpenseModal();
             expmodal.ShowDialog();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            PgsqlConnect dbconnect = new PgsqlConnect();
+            TableView table = new TableView();
+            dbconnect.conn = new NpgsqlConnection(dbconnect.connstring);
+            dbconnect.conn.Open();
+            // income table
+            dgvIncome.DataSource = null;
+            dbconnect.sql = "select * from income_select()";
+            dbconnect.cmd = new NpgsqlCommand(dbconnect.sql, dbconnect.conn);
+            table.dt = new DataTable();
+            NpgsqlDataReader rdinc = dbconnect.cmd.ExecuteReader();
+            table.dt.Load(rdinc);
+            dgvIncome.DataSource = table.dt;
+            // expense table
+            dgvExpense.DataSource = null;
+            dbconnect.sql = "select * from expense_select()";
+            dbconnect.cmd = new NpgsqlCommand(dbconnect.sql, dbconnect.conn);
+            table.dt = new DataTable();
+            NpgsqlDataReader rdexp = dbconnect.cmd.ExecuteReader();
+            table.dt.Load(rdexp);
+            dgvExpense.DataSource = table.dt;
+            dbconnect.conn.Close();
         }
     }
 }

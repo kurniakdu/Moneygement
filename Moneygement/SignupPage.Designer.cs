@@ -149,8 +149,8 @@
             this.pbPassword.Size = new System.Drawing.Size(30, 30);
             this.pbPassword.TabIndex = 1;
             this.pbPassword.TabStop = false;
-            this.pbPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseDown_1);
-            this.pbPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseUp_1);
+            this.pbPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseDown);
+            this.pbPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseUp);
             // 
             // pnlPhone
             // 
@@ -261,8 +261,6 @@
             this.pbEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbEmail.TabIndex = 1;
             this.pbEmail.TabStop = false;
-            this.pbEmail.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseDown);
-            this.pbEmail.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbPassword_MouseUp);
             // 
             // pnlUsername
             // 

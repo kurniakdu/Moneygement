@@ -36,6 +36,7 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.dgvExpense = new System.Windows.Forms.DataGridView();
             this.dgvIncome = new System.Windows.Forms.DataGridView();
             this.btnAddExpense = new System.Windows.Forms.Button();
@@ -154,6 +155,7 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(246)))));
+            this.pnlMain.Controls.Add(this.btnRefresh);
             this.pnlMain.Controls.Add(this.dgvExpense);
             this.pnlMain.Controls.Add(this.dgvIncome);
             this.pnlMain.Controls.Add(this.btnAddExpense);
@@ -170,6 +172,16 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(800, 600);
             this.pnlMain.TabIndex = 5;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(638, 559);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(108, 23);
+            this.btnRefresh.TabIndex = 17;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // dgvExpense
             // 
@@ -250,9 +262,9 @@
             this.lblSayHi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSayHi.Location = new System.Drawing.Point(637, 75);
             this.lblSayHi.Name = "lblSayHi";
-            this.lblSayHi.Size = new System.Drawing.Size(59, 16);
+            this.lblSayHi.Size = new System.Drawing.Size(55, 16);
             this.lblSayHi.TabIndex = 7;
-            this.lblSayHi.Text = "Hi, Jono!";
+            this.lblSayHi.Text = "Hi, user!";
             // 
             // lblDashboard
             // 
@@ -333,7 +345,8 @@
         private PictureBox pbTableExpense;
         private Button btnAddExpense;
         private Button btnAddIncome;
-        private DataGridView dgvExpense;
-        private DataGridView dgvIncome;
+        public DataGridView dgvExpense;
+        public DataGridView dgvIncome;
+        private Button btnRefresh;
     }
 }

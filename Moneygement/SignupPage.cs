@@ -31,12 +31,12 @@ namespace Moneygement
 
         private void pbPassword_MouseDown(object sender, MouseEventArgs e)
         {
-            tbEmail.UseSystemPasswordChar = false;
+            tbPassword.UseSystemPasswordChar = false;
         }
 
         private void pbPassword_MouseUp(object sender, MouseEventArgs e)
         {
-            tbEmail.UseSystemPasswordChar = true;
+            tbPassword.UseSystemPasswordChar = true;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -45,16 +45,6 @@ namespace Moneygement
             LoginPage login = new LoginPage();
             login.FormClosed += (s, args) => this.Close();
             login.ShowDialog();
-        }
-
-        private void pbPassword_MouseDown_1(object sender, MouseEventArgs e)
-        {
-            tbPassword.UseSystemPasswordChar = false;
-        }
-
-        private void pbPassword_MouseUp_1(object sender, MouseEventArgs e)
-        {
-            tbPassword.UseSystemPasswordChar = true;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

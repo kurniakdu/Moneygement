@@ -276,9 +276,9 @@
             this.lblSayHi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSayHi.Location = new System.Drawing.Point(637, 75);
             this.lblSayHi.Name = "lblSayHi";
-            this.lblSayHi.Size = new System.Drawing.Size(59, 16);
+            this.lblSayHi.Size = new System.Drawing.Size(55, 16);
             this.lblSayHi.TabIndex = 7;
-            this.lblSayHi.Text = "Hi, Jono!";
+            this.lblSayHi.Text = "Hi, user!";
             // 
             // lblDashboard
             // 
