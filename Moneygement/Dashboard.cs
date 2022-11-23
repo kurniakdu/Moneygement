@@ -103,6 +103,10 @@ namespace Moneygement
             {
                 lblIncome.Text = rd[0].ToString();
             }
+            else
+            {
+                lblIncome.Text = 0.ToString();
+            }
             dbconnect.conn.Close();
         }
 
@@ -117,6 +121,10 @@ namespace Moneygement
             if (rd.Read())
             {
                 lblExpense.Text = rd[0].ToString();
+            }
+            else
+            {
+                lblExpense.Text = 0.ToString();
             }
             dbconnect.conn.Close();
         }
@@ -133,6 +141,10 @@ namespace Moneygement
             if (rd.Read())
             {
                 lblSavings.Text = ((dynamic)rd[0] - (dynamic)rd[1]).ToString();
+            }
+            else
+            {
+                lblSavings.Text = 0.ToString();
             }
             dbconnect.conn.Close();
         }
