@@ -15,7 +15,6 @@ namespace Moneygement
         private string _name;
         private string _email;
         private string _phone;
-        private string _account;
 
         // properties
         public int UserId
@@ -46,11 +45,6 @@ namespace Moneygement
         {
             get { return _phone; }
             set { _phone = value; }
-        }
-        public string Account
-        {
-            get { return _account; }
-            set { _account = value; }
         }
 
         // methods
