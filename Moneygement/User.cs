@@ -48,10 +48,6 @@ namespace Moneygement
         }
 
         // methods
-        public void user_info()
-        {
-            // code here
-        }
         public bool login(string Username, string Password)
         {
             if (Username == "Jono" && Password == "haha")
